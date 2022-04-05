@@ -9,7 +9,6 @@
 body{
     font-family: 'Barlow';
     text-decoration: none;
-    /*display: flex;*/
     justify-content: center;
 }
 
@@ -26,23 +25,11 @@ header{
 
 .container{
     display: flex;
-    /*width: 100%;*/
     max-width: 1140px;
     padding-right: 15px;
     padding-left: 15px;
     margin: auto;
     justify-content: center;
-}
-
-.navigation-bar {
-    width: 80%;  /* i'm assuming full width */
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: row;
-    height: 80px;
-    margin: auto;
-    justify-content: flex-end;
 }
 
 ul{
@@ -52,24 +39,16 @@ ul{
     justify-content: space-around;
 }
 
-li{
-    list-style: none;
-    display: inline-block;
-}
-
 .logo{
     width: 20%;
     justify-content: flex-start;
-    
 }
 
 .logo img{
-    /*position: absolute;*/
     display: flex;
     justify-content: center;
     margin-left: 10px;
-    height: 80px;
-    width: 80px;
+    width: 200px;
 }
 
 .navigation-bar a{
@@ -88,11 +67,7 @@ li{
     max-width: 1140px;
     margin: auto;
     align-items: center;
-
-   /* background-color: rgb(0, 0, 0, 0.3);*/
 }
-
-
 
 .container-hero img { 
     width: 100%;
@@ -133,21 +108,15 @@ a:hover{
 }
 
 .grid-conocenos{
-    /*display: flex;*/
-    /*justify-content: space-between;*/
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: 400px;
     grid-gap: 50px;
-
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    
     max-width: 1140px;
-    /*margin: auto;*/
-
 }
 
 .caja{
@@ -289,8 +258,7 @@ iframe{
 .button{
     background: #00BAB5;
     color: #fff;
-    height: calc(1.5em + 1.375rem + 2px);
-    padding: 1rem 1.5rem;
+    padding: 1rem 3rem;
     font-size: 1rem;
     border-radius: 5px;
     border: none;
@@ -305,54 +273,8 @@ iframe{
 
 }
 
-footer{
-    background: linear-gradient(120deg, #22c1c3, #070501);
-    padding: 20px;
-    height: 200px;
-    
-}
-
 p{
     padding-bottom: 0.8rem;
-}
-
-footer p{
-    color: aliceblue;
-    padding: 15px;
-
-}
-
-footer a{
-    color: aliceblue;
- 
-}
-
-footer span{
-    color: aliceblue;
-    padding: 15px;
-    
-}
-
-.contenedor-footer{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content:space-around;
-
-}
-
-.caja-footer{
-    padding: 10px;
-    width: 50%;
-    overflow: hidden;
-    justify-content:space-between;
-
-}
-
-.caja-footer ul{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 .container-hero{
@@ -452,6 +374,10 @@ footer span{
     transition: all 0.2s ease-in;
 }
 
+.card-header{
+    padding: 0px;
+}
+
 .card-header img {
     width: 100%;
     height: 300px;
@@ -538,6 +464,11 @@ footer span{
         grid-template-columns: 100%;
         display: flex;
         flex-direction: column;
+
+    }
+
+    .centered{
+        top: 20%;
 
     }
 
@@ -631,5 +562,79 @@ footer span{
     .competencia-preview{
         max-width: none;
     }
+}
 
+.navbar-nav {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    justify-content: flex-end;
+    
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #00BAB5;
+}
+
+.container-fluid{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1.5rem;
+}
+
+
+.card {
+    background-color: #F8F9FB !important
+}
+
+
+
+h3 {
+    font-size: calc(24px + (30 - 24) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.social {
+    font-size: 21px !important
+}
+
+.color-text {
+    color: #757575 !important
+}
+
+button {
+    font-size: calc(12px + (13 - 12) * ((100vw - 360px) / (1600 - 320))) !important;
+    padding-left: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-right: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-top: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-bottom: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+footer a{
+    color: #caced1 !important
+}
+
+footer img {
+    max-height: 100px;
+}
+
+.row-1 {
+    background: linear-gradient(120deg, #22c1c3, #070501) !important;
+}
+
+.row-2 {
+    background: linear-gradient(120deg, #22c1c3, #070501) !important;
 }
