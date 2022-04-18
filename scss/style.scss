@@ -1,9 +1,14 @@
 @import "./partials/variables";
 @import "./partials/extend";
+@font-face {
+    font-family: Dutch;
+    src: url(../fonts/Du801Bd.ttf);
+}
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "./partials/form";
 @import "./partials/competencias";
 @import "./partials/conocenos";
+@import "./partials/galeria";
 @import "./partials/hero";
 @import "./partials/mediaQuerys";
 
@@ -23,7 +28,7 @@ body{
 
 header{
     display: block;
-    background-color: $color-white;
+    background-color: $primary-color;
     /*position: fixed;*/
     z-index: 9;
     width: 100%;
@@ -64,7 +69,7 @@ ul{
     display: inline-block;
     padding: 20px 20px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2rem;
     justify-content: flex-end;
 }
@@ -79,10 +84,15 @@ h1{
     font-size: 3rem;
     padding-bottom: 20px;
     padding-top: 20px;
+    font-family: Dutch;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: Dutch;
+    color: $secondary-color;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 a{
@@ -96,7 +106,7 @@ a:hover{
 
 .contenedor-verde{
     width: 100%;
-    background-color: rgb(230, 247, 247);
+    background-color: $primary-transparency;
     align-items: center;
     align-content: center;
     flex-direction: column;
@@ -106,21 +116,18 @@ a:hover{
 }
 
 .contenedor-blanco{
-    width: 80%;
-    max-width: 1140px;
-    margin: auto;
+    width: 100%;
     background-color: $color-white;
     align-items: center;
     align-content: center;
     flex-direction: column;
     box-sizing: border-box;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
     display: block;
 }
 
 .caja-blanca{
-    width: 100%;
+    width: 80%;
     max-width: 1140px;
     margin: auto;
     position: relative;
@@ -134,11 +141,11 @@ a:hover{
 }
 
 .caja-verde{
-    width: 100%;
+    width: 80%;
     max-width: 1140px;
     margin: auto;
     position: relative;
-    background-color: rgb(230, 247, 247);
+    background-color: $primary-transparency;
     align-items: center;
     align-content: center;
     flex-direction: column;
@@ -150,10 +157,10 @@ a:hover{
 iframe{
     display: flex;
     width: 100%;
+    height: 500px;
     border-radius: 10px;
     align-content: center;
     margin: auto;
-    padding-bottom: 30px;
 }
 
 .encabezado-caja{
@@ -169,7 +176,7 @@ iframe{
 }
 
 .button{
-    background: $primary-color;
+    background: $secondary-color;
     color: $color-white;
     padding: 1rem 3rem;
     font-size: 1rem;
@@ -181,7 +188,7 @@ iframe{
 
 p{
     padding-bottom: 0.8rem;
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 
 .contenedor-cards{
@@ -231,39 +238,6 @@ p{
     margin: 0 0 40px;
 }
 
-.grid-galeria{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    grid-gap: 10px;
-}
-
-.grid-galeria img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-
-}
-
-.img2{
-    grid-area: 1 / 2 / 1 / 4;
-
-}
-
-.img3{
-    grid-area: 2 / 1 / 4 / 1;
-}
-
-.img5{
-    grid-area: 2 / 3 / 4 / 3;
-}
-
-.img7{
-    grid-area: 3 / 2 / 5 / 2;
-}
-
 #caja1{
     grid-area: 1 / 1 / 1/ 2;
 }
@@ -276,11 +250,20 @@ p{
     font-size: 1.2rem !important;
     font-weight: 500;
     justify-content: flex-end;
-    
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    color: $primary-color;
+    color: $secondary-color;
+}
+
+.nav-link:hover {
+    color: $primary-color !important;
+
 }
 
 .container-fluid{
@@ -290,6 +273,7 @@ p{
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: center;
+    font-family: Dutch;
 
 }
 
@@ -305,7 +289,7 @@ p{
 
 
 h3 {
-    font-size: calc(24px + (30 - 24) * ((100vw - 360px) / (1600 - 360))) !important
+    font-size: 2rem;
 }
 
 .social {
@@ -332,7 +316,7 @@ button:focus {
 }
 
 footer a{
-    color: $color-white !important
+    color: $color-black !important
 }
 
 footer img {
@@ -340,10 +324,10 @@ footer img {
 }
 
 .row-1 {
-    background: linear-gradient(120deg, #22c1c3, #070501) !important;
+    background-color: $primary-color !important;
 }
 
 .row-2 {
-    background: linear-gradient(120deg, #22c1c3, #070501) !important;
+    background-color: $primary-color !important;
 }
 
