@@ -1,7 +1,5 @@
 .competencia-container{
-    display: flex;
-	align-items: center;
-	justify-content: center;
+    @include flex (flex, center, center);
 	flex-direction: column; 
 }
 

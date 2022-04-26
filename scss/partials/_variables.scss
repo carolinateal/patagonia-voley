@@ -2,13 +2,10 @@ $primary-color: #00BAB5;
 $secondary-color: #325a59;
 $color-white: #fdfdfd;
 
-/*
+
 @mixin flex ($display, $horizontal, $vertical){
     display: $display;
     justify-content: $horizonal;
     align-items: $verical;
 }
 
-div {
-    @include flex (flex, center, center);
-}*/
