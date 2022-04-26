@@ -1,16 +1,23 @@
+.container-afiche{
+    background-color: $primary-color;
+    position: relative;
+    justify-content: center;
+}
+
 .container-hero{
     background-color: $primary-color;
     position: relative;
-    height: 320px;
+    justify-content: center;
+    height: 40vh;
 }
 
 .container-hero h1{
-    color: $color-white;
+    color: $secondary-color;
     
 }
 
 .container-hero p{
-    color: $color-white;
+    color: $color-black;
 }
 
 .centered{
@@ -22,17 +29,10 @@
     align-items: center;
 }
 
-.container-hero img { 
+.container-afiche img { 
     width: 100%;
+    max-width: 1400px;
     height: auto;
-    opacity: 0.8;
-}
-
-.container-hero h1{
-    color: #ffffff;
-    
-}
-
-.container-hero p{
-    color: $color-white;
+    display: block;
+    margin: auto;
 }
